@@ -6,8 +6,11 @@ package gohocr
 import (
 	"encoding/xml"
 	"errors"
+	"fmt"
 	"io/ioutil"
 	"os"
+	"regexp"
+	"strconv"
 )
 
 // Page represents one hocr file

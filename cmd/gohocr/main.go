@@ -9,11 +9,10 @@ package main
 import (
 	"encoding/json"
 	"flag"
+	"github.com/fabiante/gohocr"
 	"io/ioutil"
 	"log"
 	"strings"
-
-	"github.com/stefanhengl/gohocr"
 )
 
 func main() {
