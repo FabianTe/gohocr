@@ -1,16 +1,21 @@
 # gohocr
+
+**This is a fork of [github.com/stefanhengl/gohocr](https://github.com/stefanhengl/gohocr)**. The original repository was missing a lot of features
+that I need for a project. This fork was created to be able to improve the quality of the parsed
+data model. Feel free to collaborate.
+
 gohocr parses Tesseract's *.hocr files to structs. It can be used as a library as well as from the command line.
 
 # Getting Started
 
 ## Install
 
-    go get github.com/stefanhengl/gohocr
+    go get github.com/fabiante/gohocr
 
 ## Use as Library
 
     import (
-        "github.com/stefanhengl/gohocr
+        "github.com/fabiante/gohocr
     )
 
     func main() {
@@ -35,6 +40,6 @@ The hOCR can either be provided as `string` (path to a hOCR file), as `*os.File`
 
 The CLI will create a json in the same folder as the input file.
 
-    go install github.com/stefanhengl/gohocr/..
+    go install github.com/fabiante/gohocr/..
     ghocr -f /path/to/hocr/file.hocr
 
